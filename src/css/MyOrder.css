@@ -1,0 +1,28 @@
+/* Orders.css */
+.orders-container {
+    margin: 20px;
+  }
+  
+  .order {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .order-date {
+    font-weight: bold;
+  }
+  
+  .order-details {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .order-details li {
+    margin-bottom: 10px;
+  }
+  
+  .order-details li p {
+    margin: 0;
+  }
+  
