@@ -16,7 +16,7 @@ export default function MyOrder() {
         try {
             const token = localStorage.getItem('authToken');
             const userEmail = localStorage.getItem('Useremail');
-            const response = await axios.get(`http://localhost:5001/api/Myorders?email=${userEmail}`, {
+            const response = await axios.get(`https://cater-orange-backend.vercel.app/api/Myorders?email=${userEmail}`, {
                 headers: {
                     Authorization: `Bearer ${token}`
                 }

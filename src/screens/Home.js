@@ -10,7 +10,7 @@ export default function Home() {
     const [FoodItem, setFoodItem] = useState([]);
 
     const loadData = async () => {
-        const response = (await axios.post('http://localhost:5001/api/foodData'));
+        const response = (await axios.get('https://cater-orange-backend.vercel.app/api/foodData'));
         // console.log(response[0],response[1]);
         // console.log(response.data[1]);
         setFoodItem(response.data[0]);

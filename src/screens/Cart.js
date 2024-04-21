@@ -21,7 +21,7 @@ export default function Cart() {
   let userEmail = localStorage.getItem("Useremail");
   let token = localStorage.getItem("authToken");
   
-  let response = await fetch("http://localhost:5001/api/OrderData",{
+  let response = await fetch("https://cater-orange-backend.vercel.app/api/OrderData",{
     method:'POST',
     headers: {
       'content-Type': 'application/json',

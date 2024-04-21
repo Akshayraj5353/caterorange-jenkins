@@ -22,7 +22,7 @@ export default function Login() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:5001/api/Login', formData);
+      const response = await axios.post('https://cater-orange-backend.vercel.app/api/Login', formData);
       console.log(response.data); // handle successful response
       localStorage.setItem('authToken', response.data.token);
       console.log(localStorage.getItem("authToken"));

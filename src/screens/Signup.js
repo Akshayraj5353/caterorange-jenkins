@@ -24,8 +24,9 @@ export default function Signup() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('http://localhost:5001/api/Register', formData);
-            console.log(response.data); // handle successful response
+            const response = await axios.post('https://cater-orange-backend.vercel.app/api/Register', formData);
+            console.log(response.data); 
+            alert(response.data," you can login with email and password")
             // Redirect or show a success message to the user
         } catch (error) {
             console.error('Error:', error.message); // handle error
